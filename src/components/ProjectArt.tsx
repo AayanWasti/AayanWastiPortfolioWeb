@@ -1,5 +1,18 @@
 export default function ProjectArt({ project }: { project: string }) {
   const key = project.toLowerCase()
+  if (key === "career-ops") return (
+    <div className="project-art" style={{ background: '#19212d', color: '#e6e4d9' }} aria-hidden="true">
+      <svg viewBox="0 0 400 250" fill="none" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', opacity: 0.55 }}>
+        <rect x="32" y="58" width="145" height="98" rx="7" stroke="currentColor" strokeWidth="0.8" />
+        <rect x="226" y="58" width="145" height="98" rx="7" stroke="currentColor" strokeWidth="0.8" />
+        <path d="M177 108h49M213 102l13 6-13 6" stroke="#dd7627" strokeWidth="1.2" />
+        <path d="M47 79h86M47 90h105M47 101h73M47 112h96M47 123h113" stroke="currentColor" strokeWidth="0.9" strokeOpacity=".3" />
+        <path d="M241 84h114M241 98h78M241 112h99" stroke="currentColor" strokeWidth="1" strokeOpacity=".35" />
+        <circle cx="241" cy="134" r="3" fill="#dd7627" />
+      </svg>
+      <span className="art-title">career<span className="italic">-ops</span></span>
+    </div>
+  )
   if (key === "carenest") return (
     <div className="project-art carenest-art" aria-hidden="true">
       <svg className="cn-chart" viewBox="0 0 400 250" fill="none">

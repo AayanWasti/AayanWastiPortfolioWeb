@@ -356,7 +356,6 @@ export default function App() {
           )}
         </main>
         <footer className="site-footer">
-          <a className="source-download" href="/aayan-wasti-source.zip" download>Source code <span aria-hidden="true">↓</span></a>
           <button className="theme-toggle" aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`} onClick={() => setTheme(current => current === 'light' ? 'dark' : 'light')}>
             <span aria-hidden="true">{theme === 'light' ? '☾' : '☼'}</span>
             {theme === 'light' ? 'Dark mode' : 'Light mode'}
